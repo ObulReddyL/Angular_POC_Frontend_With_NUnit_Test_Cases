@@ -1,0 +1,71 @@
+
+#tblItems {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #tblItems td, #tblItems th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #tblItems tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #tblItems tr:hover {background-color: #ddd;}
+  
+  #tblItems th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btnCancelSyle{
+    margin-left: 5px;
+}
+  
+  .btnStle{
+  height: 32px;
+  width: 85px;
+}
+  
+  .tdBtn{
+  width:18% !important;
+}
+  
+  .tdRowHeader{
+  width:5% !important;
+}
+  
+  .tdPriceHeader{
+  width:10% !important;
+}
+  
+  .tblHeader{
+text-align: center !important;
+}
+  
+  .emptytable{
+  text-align: center !important;
+}
+  
+  .itemImg{
+  height: 32px;;
+}
+  
+  .tdItemImage{
+  text-align: center !important;
+}
+  
+  .thItemImage{
+  width:5% !important;
+}
+  
+  #divtblItems{
+  height:392px;
+  overflow:auto;
+}
+
+/*# sourceMappingURL=styles.css.map*/
