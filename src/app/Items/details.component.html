@@ -1,0 +1,33 @@
+<div>
+    <h1 id="headDeatils">All Items</h1>
+    <div id="divtblItems">
+        <table id="tblItems">
+            <thead>
+                <tr>
+                    <th class="tblHeader tdRowHeader">####</th>
+                    <th class="tblHeader">Item Name</th>
+                    <th class="tblHeader">Description</th>
+                    <th class="tblHeader tdPriceHeader">Price</th>
+                    <th class="tblHeader thItemImage">Image</th>
+                    <th class="tblHeader tdBtn">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd" *ngFor="let item of items; let ind = index">
+                    <td>{{ind + 1}}</td>
+                    <td>{{item.Name}}</td>
+                    <td>{{item.Description}}</td>
+                    <td>{{item.Price}}</td>
+                    <td class="tdItemImage"><img class="itemImg" [src]="item.ItemImageBase64"> </td>
+                    <td class="tblHeader">
+                        <button type="button" class="btnStle" [routerLink]="['/edit', item.ItemId]">Update</button>
+                        <button type="button" id="btnDelete" class="btnStle btnCancelSyle" (click)="deleteItem(item.ItemId)">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div [hidden]="isGridEmpty" class="emptytable">
+            <h4>Please Add Items while using Add Item button.</h4>
+        </div>
+    </div>
+</div>

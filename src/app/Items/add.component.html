@@ -1,0 +1,37 @@
+<div id="divAddForm">
+    <h1 class="AddItemHeader">{{btnText}} Item</h1> 
+    <form [formGroup]="itemForm" (ngSubmit)="submitForm()">
+        <table>
+            <tr>
+                <td><label>Name <label class="mandatorySytle">*</label></label></td>
+                <td><input type="text" formControlName ="Name" class="form-control txtStyle" ></td>
+            </tr>
+            <tr>
+                <td><label>Description</label></td>
+                <td><textarea  formControlName="Description" class="form-control txtaStyle"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Price</label></td>
+                <td><input type="text" id ="Price" formControlName="Price" class="form-control txtStyle"></td>
+            </tr>
+            <tr>
+                <td><label>Upload Image</label></td>
+                <td> <input type="file" (change)="fileChangeEvent($event)" class="fileInputProfile">
+                    <img class="itemImg" [src]="itemImageBase64">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" class="btnAddStyle">{{btnText}}</button>
+                    <button type="button"[routerLink]="['']" class="btnAddStyle">Cancel</button>
+                </td>
+            </tr>
+        </table>
+        <div class="marginTop12" [hidden] ="isFormValid">
+            <label class="mandatorySytle">{{errorMsg}}</label>
+        </div>
+    </form>
+
+
+</div>

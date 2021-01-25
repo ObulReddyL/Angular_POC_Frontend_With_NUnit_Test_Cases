@@ -1,0 +1,30 @@
+.txtStyle{
+    height: 30px;
+    width: 300px;
+}
+.txtaStyle{
+    width: 301px;
+    height: 94px;
+}
+.btnAddStyle{
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 40px;
+    width: 143px;
+}
+.mandatorySytle{
+    color:red;
+}
+#divAddForm{
+    margin-left: 34%;
+}
+.marginTop12{
+    margin-top: 12px;
+}
+.itemImg{
+    height: 30px;;
+}
+.AddItemHeader{
+    padding-top: 4%;
+    margin-left: 17%;
+}
